@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+    flask:
+        build: ./flask
+        volumes:
+            - ./flask:/app
+        # Start the flask web server
+        command: ["python", "app.py"]
+
+    cypress:
+        build: ./cypress
+        volumes:
+            - ./:/mnt
+        depends_on:
+            - flask
+        # Run the cypress command
+        command: ["cypress", "run", "-s", "integration/flask_spec.js"]
