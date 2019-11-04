@@ -11,12 +11,12 @@ A bare bones example of getting containerized [Cypress](https://cypress.io) to t
 ## How to get this working
 #### 1. Clone the repo locally
 ```
-git clone https://github.com/bwillenbring/template_flask_app.git
+git clone https://github.com/bwillenbring/flask_cypress_docker.git
 ```
 
 #### 2. cd into the top level directory
 ```
-cd template_flask_app
+cd flask_cypress_docker
 ```
 Typing `ls` should show these files...
 ```
@@ -29,7 +29,7 @@ docker-compose build
 ```
 Wait for this:
 ```
-Successfully tagged template_flask_app_cypress:latest
+Successfully tagged flask_cypress_docker:latest
 ```
 
 #### 4. Run the container
