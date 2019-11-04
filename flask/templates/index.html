@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+    <!-- Css -->
+    <style type="text/css">
+        body {
+            font-family: "Geomanist Book",sans-serif;
+            color:#333333;
+            padding:20px;
+            padding:15px;
+            margin:0px;
+            background-color: #c3e4f7;
+        }
+        li {
+            line-height:1.3em;
+        }
+        .hilight {
+            background-color:yellow;
+            padding:2px;
+            margin:2px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="url" style="font-size:3em;">
+    <h1>Flask App Properties</h1>
+    <ul>
+        <li><b>request.url:</b> <span class="hilight">{{ request.url }}</span></li>
+        <li><b>request.host:</b> <span class="hilight">{{ request.host }}</span></li>
+        <li><b>request.environ.SERVER_PORT:</b> <span class="hilight">{{ request.environ.SERVER_PORT }}</span></li>
+    </ul>
+</div>
+
+</body>
+</html>
