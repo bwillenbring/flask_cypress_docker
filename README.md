@@ -5,13 +5,36 @@ A bare bones example of getting containerized [Cypress](https://cypress.io) to t
 
 ----
 ## Requirements for usage
-- `Docker version 19.03.1` or higher
+- `Docker engine 18.06.0` or higher (the docker-compose file uses compose version 3.7)
+----
 
-## To use
-- Clone the repo locally: `git clone https://github.com/bwillenbring/template_flask_app.git`
-- cd into the top level directory (where you can see `docker-compose.yml`)
-- Build the container: `docker-compose build`
-- Wait for this: `Successfully tagged template_flask_app_cypress:latest`
-- Run it: `docker-compose up`
+## How to get this working
+#### 1. Clone the repo locally
+```
+git clone https://github.com/bwillenbring/template_flask_app.git
+```
+
+#### 2. cd into the top level directory
+```
+cd template_flask_app
+```
+Typing `ls` should show these files...
+```
+LICENSE			README.md		cypress			docker-compose.yml	flask
+```
+
+#### 3. Build the container
+```
+docker-compose build
+```
+Wait for this:
+```
+Successfully tagged template_flask_app_cypress:latest
+```
+
+#### 4. Run the container
+```
+docker-compose up
+```
 
 ----
