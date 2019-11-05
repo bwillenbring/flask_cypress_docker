@@ -14,4 +14,4 @@ services:
         depends_on:
             - flask
         # Run the cypress command
-        command: ["cypress", "run", "-s", "integration/flask_spec.js"]
+        command: ["cypress", "run"]
