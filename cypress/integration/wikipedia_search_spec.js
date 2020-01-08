@@ -33,7 +33,6 @@ describe('Wikipedia Search', function() {
         // Assert there is a specific phrase in a specific section
         cy.get('h3:contains("Accident to eye")')
             .scrollIntoView().next()
-            .should('contain', 'the paper clip hit Avery in his left eye')
-            .and('contain','He instantly lost use of his eye');
+            .should('contain', 'paper clip')
     });
 });
