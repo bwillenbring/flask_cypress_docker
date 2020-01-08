@@ -37,4 +37,23 @@ Successfully tagged flask_cypress_docker:latest
 docker-compose up
 ```
 
+#### 5. Expect this output
+```bash
+Starting template_flask_app_flask_1 ... done
+Starting template_flask_app_cypress_1 ... done
+Attaching to template_flask_app_flask_1, template_flask_app_cypress_1
+flask_1    |  * Serving Flask app "app" (lazy loading)
+flask_1    |  * Environment: production
+flask_1    |    WARNING: Do not use the development server in a production environment.
+flask_1    |    Use a production WSGI server instead.
+flask_1    |  * Debug mode: on
+flask_1    |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+flask_1    |  * Restarting with stat
+flask_1    |  * Debugger is active!
+flask_1    |  * Debugger PIN: 206-428-825
+```
+
+#### 6. Check the contents of `cypress/videos`
+There should be 4 .mp4 files showing the test run.
+
 ----
