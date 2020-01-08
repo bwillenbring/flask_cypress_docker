@@ -1,7 +1,6 @@
 {
   "_comment": "baseUrl is deliberately misconfigured below",
-  "baseUrl": "http://127.0.0.1:5000",
-  "baseUrl_good": "http://flask:5000",
+  "baseUrl": "http://flask:5000",
   "integrationFolder": "integration",
   "fixturesFolder": "fixtures",
   "pluginsFile": "plugins/index.js",
